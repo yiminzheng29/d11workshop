@@ -24,3 +24,19 @@ git checkout -b develop master (check out from the master branch to the develop 
 git checkout master (to change back to master)
 git branch
 git merge develop
+
+
+To sync the code to developbranch
+git checkout develop
+git merge master
+git push -u origin develop
+
+git checkout master
+git merge develop (merge changes done in develop to master branch)
+git push -u origin master
+
+// make changes in master, and need to synchronise these changes to develop branch
+// assume changes have already been checked into master branch
+git checkout develop
+git merge master (merge changes done in master branch into develop branch)
+git push -u origin develop
