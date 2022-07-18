@@ -21,3 +21,6 @@ gir branch -a (to see all the branches locally and remotely)
 git branch -delete <branch name>
 git checkout -b develop master (check out from the master branch to the develop branch)
  -- to push: git push origin develop
+git checkout master (to change back to master)
+git branch
+git merge develop
